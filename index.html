@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visit Janakpur | Janakpurdham, Dhanusha, Nepal</title>
+
+    <meta name="description"
+          content="Explore Janakpurdham, Dhanusha, Nepal — Janaki Mandir, Ram Mandir, Ganga Sagar, Dhanush Sagar, Mithila culture and more.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        /* =========================
+           GLOBAL
+        ========================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --primary: #8b1e3f;
+            --secondary: #d89b25;
+            --gold: #f2c14e;
+            --cream: #fff9ed;
+            --dark: #251b1b;
+            --light: #fffdf8;
+            --pink: #fff0f3;
+            --shadow: 0 15px 40px rgba(52, 26, 20, 0.13);
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3 {
+            font-family: "Playfair Display", serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1150px, 92%);
+            margin: auto;
+        }
+
+        .section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-title .small-title {
+            color: var(--secondary);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 14px;
+        }
+
+        .section-title h2 {
+            font-size: clamp(35px, 5vw, 52px);
+            color: var(--primary);
+            margin: 8px 0 15px;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: auto;
+            color: #6d6060;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================== */
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: 0.3s;
+        }
+
+        header.scrolled {
+            background: rgba(255, 253, 248, 0.96);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar {
+            min-height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: "Playfair Display", serif;
+            font-size: 27px;
+            font-weight: 800;
+            color: white;
+        }
+
+        header.scrolled .logo {
+            color: var(--primary);
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            font-weight: 500;
+            position: relative;
+        }
+
+        header.scrolled .nav-links a {
+            color: var(--dark);
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: -7px;
+            background: var(--gold);
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .menu-btn {
+            display: none;
+            border: 0;
+            background: transparent;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        header.scrolled .menu-btn {
+            color: var(--primary);
+        }
+
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(26, 8, 11, 0.78),
+                    rgba(60, 12, 27, 0.45),
+                    rgba(0,0,0,0.15)
+                ),
+                url("https://nepaljetairways.com/upload/Destination/1750758543_janakpurdham-temple.jpg")
+                center/cover no-repeat;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 750px;
+            padding-top: 60px;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background: rgba(255,255,255,0.13);
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 8px 18px;
+            border-radius: 50px;
+            backdrop-filter: blur(8px);
+            margin-bottom: 20px;
+            color: #ffe9a9;
+        }
+
+        .hero h1 {
+            font-size: clamp(48px, 8vw, 86px);
+            line-height: 1;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 650px;
+            color: #fff4f1;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 14px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-block;
+            transition: 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: #3d2500;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            background: #ffd76e;
+        }
+
+        .btn-outline {
+            border: 1px solid white;
+            color: white;
+            background: rgba(255,255,255,0.08);
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            animation: bounce 2s infinite;
+            font-size: 14px;
+        }
+
+        @keyframes bounce {
+            0%,100% { transform: translate(-50%, 0); }
+            50% { transform: translate(-50%, 10px); }
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================== */
+
+        .about {
+            background: var(--cream);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            height: 530px;
+            object-fit: cover;
+            border-radius: 25px;
+            box-shadow: var(--shadow);
+        }
+
+        .about-badge {
+            position: absolute;
+            bottom: -25px;
+            right: -20px;
+            background: white;
+            padding: 22px;
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+            width: 210px;
+        }
+
+        .about-badge strong {
+            display: block;
+            color: var(--primary);
+            font-size: 30px;
+            font-family: "Playfair Display", serif;
+        }
+
+        .about-content h2 {
+            font-size: 50px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: #655a5a;
+            margin-bottom: 18px;
+        }
+
+        .about-list {
+            list-style: none;
+            margin-top: 25px;
+        }
+
+        .about-list li {
+            margin: 12px 0;
+        }
+
+        .about-list span {
+            color: var(--secondary);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           PLACES
+        ========================== */
+
+        .places {
+            background: white;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: 0.35s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-image {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-image img {
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .card:hover .card-image img {
+            transform: scale(1.08);
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-content h3 {
+            color: var(--primary);
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            color: #6c6262;
+            font-size: 14px;
+        }
+
+        .place-tag {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 5px 12px;
+            background: var(--pink);
+            color: var(--primary);
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           CULTURE
+        ========================== */
+
+        .culture {
+            background:
+                linear-gradient(
+                    rgba(95, 20, 39, 0.91),
+                    rgba(95, 20, 39, 0.91)
+                ),
+                url("https://upload.wikimedia.org/wikipedia/commons/c/c9/Ganga_Sagar%2C_Janakpur-September_22%2C_2016-IMG_7686.jpg")
+                center/cover fixed;
+            color: white;
+        }
+
+        .culture-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .culture h2 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .culture p {
+            color: #f8dddd;
+            margin-bottom: 20px;
+        }
+
+        .culture-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .culture-box {
+            padding: 25px;
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 18px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(8px);
+        }
+
+        .culture-box .icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .culture-box h3 {
+            margin-bottom: 5px;
+        }
+
+        .culture-box p {
+            font-size: 13px;
+            margin: 0;
+        }
+
+
+        /* =========================
+           GALLERY
+        ========================== */
+
+        .gallery {
+            background: var(--cream);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 210px;
+            gap: 15px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 16px;
+            position: relative;
+        }
+
+        .gallery-item:first-child {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .gallery-item:nth-child(4) {
+            grid-row: span 2;
+        }
+
+        .gallery-item img {
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 25px 15px 15px;
+            color: white;
+            background: linear-gradient(transparent, rgba(0,0,0,0.75));
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           LOCATION
+        ========================== */
+
+        .location {
+            background: white;
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .map {
+            min-height: 450px;
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 450px;
+            border: 0;
+        }
+
+        .location-info {
+            background: var(--cream);
+            border-radius: 22px;
+            padding: 45px;
+        }
+
+        .location-info h2 {
+            color: var(--primary);
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            display: flex;
+            gap: 18px;
+            margin: 25px 0;
+        }
+
+        .info-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .info-item h4 {
+            color: var(--primary);
+            margin-bottom: 3px;
+        }
+
+        .info-item p {
+            color: #706565;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact {
+            background: linear-gradient(135deg, #fff8e8, #fff0f4);
+        }
+
+        .contact-box {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 50px;
+            border-radius: 25px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-box h2 {
+            text-align: center;
+            color: var(--primary);
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .contact-box > p {
+            text-align: center;
+            color: #777;
+            margin-bottom: 35px;
+        }
+
+        form {
+            display: grid;
+            gap: 18px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 15px 17px;
+            border: 1px solid #eadede;
+            border-radius: 12px;
+            font-family: inherit;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(139,30,63,0.08);
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        form button {
+            width: fit-content;
+            margin: auto;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #241416;
+            color: #ddd;
+            padding: 55px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 50px;
+            padding-bottom: 40px;
+        }
+
+        .footer-brand h2 {
+            font-size: 32px;
+            color: white;
+            margin-bottom: 12px;
+        }
+
+        .footer-brand h2 span {
+            color: var(--gold);
+        }
+
+        .footer-brand p {
+            color: #bdb0b0;
+            max-width: 450px;
+        }
+
+        footer h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin: 9px 0;
+            color: #bdb0b0;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 22px;
+            text-align: center;
+            color: #968989;
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                position: absolute;
+                top: 78px;
+                left: 0;
+                width: 100%;
+                background: white;
+                display: none;
+                flex-direction: column;
+                padding: 25px;
+                gap: 18px;
+                box-shadow: 0 15px 25px rgba(0,0,0,0.08);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                color: var(--dark) !important;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .about-grid,
+            .culture-grid,
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cards {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .section {
+                padding: 65px 0;
+            }
+
+            .hero h1 {
+                font-size: 53px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .about-content h2,
+            .culture h2 {
+                font-size: 40px;
+            }
+
+            .about-image img {
+                height: 400px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                grid-auto-rows: 150px;
+            }
+
+            .gallery-item:first-child {
+                grid-column: span 2;
+            }
+
+            .gallery-item:nth-child(4) {
+                grid-row: span 1;
+            }
+
+            .culture-features {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-box {
+                padding: 30px 20px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .location-info {
+                padding: 30px 25px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVIGATION
+========================== -->
+
+<header id="header">
+
+    <div class="container navbar">
+
+        <a href="#home" class="logo">
+            Visit <span>Janakpur</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#places">Places</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================== -->
+
+<section class="hero" id="home">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                ✦ Welcome to Madhesh, Nepal
+            </span>
+
+            <h1>
+                Discover<br>
+                <span>Janakpur</span>
+            </h1>
+
+            <p>
+                Explore the sacred city of Janakpurdham — a beautiful
+                destination of temples, sacred ponds, Mithila art,
+                culture and timeless stories.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#places" class="btn btn-primary">
+                    Explore Janakpur
+                </a>
+
+                <a href="#location" class="btn btn-outline">
+                    📍 Find Location
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="#about" class="scroll-down">
+        Scroll to explore ↓
+    </a>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================== -->
+
+<section class="section about" id="about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-image">
+
+                <img
+                    src="https://jankarinepal.com/wp-content/uploads/2019/10/Janaki-Mandir.jpg"
+                    alt="Beautiful Janaki Mandir in Janakpur"
+                >
+
+                <div class="about-badge">
+                    <strong>Janakpurdham</strong>
+                    City of temples, culture & devotion
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <div class="section-title" style="text-align:left;margin-bottom:20px;">
+                    <span class="small-title">About the City</span>
+                </div>
+
+                <h2>
+                    Where history meets devotion
+                </h2>
+
+                <p>
+                    Janakpur, also known as Janakpurdham, is one of
+                    Nepal's most important religious and cultural
+                    destinations. Located in Dhanusha District of
+                    Madhesh Province, the city is closely associated
+                    with the ancient kingdom of Mithila and the
+                    Ramayana tradition.
+                </p>
+
+                <p>
+                    The city is famous for the magnificent Janaki
+                    Mandir, sacred ponds, colorful festivals and
+                    beautiful Mithila artwork.
+                </p>
+
+                <ul class="about-list">
+
+                    <li>
+                        <span>✦</span>
+                        Home of the famous Janaki Mandir
+                    </li>
+
+                    <li>
+                        <span>✦</span>
+                        Rich Mithila art and culture
+                    </li>
+
+                    <li>
+                        <span>✦</span>
+                        Sacred ponds and historic temples
+                    </li>
+
+                    <li>
+                        <span>✦</span>
+                        Famous festivals including Vivah Panchami
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PLACES
+========================== -->
+
+<section class="section places" id="places">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="small-title">
+                Must Visit
+            </span>
+
+            <h2>
+                Places to Explore
+            </h2>
+
+            <p>
+                Discover some of the most beautiful and culturally
+                important places around Janakpurdham.
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+            <!-- Janaki Mandir -->
+
+            <article class="card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://nepaljetairways.com/upload/Destination/1750758543_janakpurdham-temple.jpg"
+                        alt="Janaki Mandir Janakpur"
+                    >
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Janaki Mandir</h3>
+
+                    <p>
+                        The magnificent temple dedicated to Goddess
+                        Sita is the heart of Janakpurdham and one of
+                        Nepal's most celebrated religious landmarks.
+                    </p>
+
+                    <span class="place-tag">
+                        🛕 Sacred Temple
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Ram Mandir -->
+
+            <article class="card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://www.holidify.com/images/cmsuploads/compressed/3889882884_f1427137d5_b_20191022103715.jpg"
+                        alt="Sacred pond and temple area in Janakpur"
+                    >
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Ram Mandir</h3>
+
+                    <p>
+                        A historic pagoda-style temple near the
+                        central sacred areas of Janakpur, associated
+                        with Lord Ram and the city's spiritual heritage.
+                    </p>
+
+                    <span class="place-tag">
+                        🕉️ Heritage
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Ganga Sagar -->
+
+            <article class="card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Ganga_Sagar%2C_Janakpur-September_22%2C_2016-IMG_7686.jpg"
+                        alt="Ganga Sagar Janakpur"
+                    >
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Ganga Sagar</h3>
+
+                    <p>
+                        One of Janakpur's best-known sacred ponds,
+                        surrounded by ghats, temples and beautiful
+                        spaces for peaceful walks and religious rituals.
+                    </p>
+
+                    <span class="place-tag">
+                        🌊 Sacred Pond
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Dhanush Sagar -->
+
+            <article class="card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://www.holidify.com/images/cmsuploads/compressed/3889882884_f1427137d5_b_20191022103715.jpg"
+                        alt="Dhanush Sagar Janakpur"
+                    >
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Dhanush Sagar</h3>
+
+                    <p>
+                        A significant sacred pond in Janakpur, known
+                        for its peaceful waters, religious traditions
+                        and beautiful surroundings.
+                    </p>
+
+                    <span class="place-tag">
+                        🌅 Nature & Faith
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Dhanushadham -->
+
+            <article class="card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://www.holidify.com/images/cmsuploads/compressed/3889882884_f1427137d5_b_20191022103715.jpg"
+                        alt="Dhanushadham area near Janakpur"
+                    >
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Dhanushadham</h3>
+
+                    <p>
+                        Located northeast of Janakpur, Dhanushadham
+                        is an important pilgrimage destination associated
+                        with the legendary bow of Lord Shiva.
+                    </p>
+
+                    <span class="place-tag">
+                        🏹 Pilgrimage
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Mithila Art -->
+
+            <article class="card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://www.janakpur.info/"
+                        alt="Janakpur cultural destination"
+                    >
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Mithila Culture</h3>
+
+                    <p>
+                        Experience colorful Mithila paintings,
+                        traditional designs, local crafts, festivals,
+                        food and the warm cultural heritage of the region.
+                    </p>
+
+                    <span class="place-tag">
+                        🎨 Art & Culture
+                    </span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CULTURE
+========================== -->
+
+<section class="section culture">
+
+    <div class="container">
+
+        <div class="culture-grid">
+
+            <div>
+
+                <span class="small-title">
+                    Experience Mithila
+                </span>
+
+                <h2>
+                    A city full of color, art & tradition
+                </h2>
+
+                <p>
+                    Janakpur is more than a pilgrimage destination.
+                    It is a living center of Mithila culture, where
+                    traditional art, music, festivals and architecture
+                    remain part of everyday life.
+                </p>
+
+                <p>
+                    Walk through the historic areas, visit temples,
+                    admire Mithila artwork and experience the colorful
+                    atmosphere of Janakpurdham.
+                </p>
+
+            </div>
+
+
+            <div class="culture-features">
+
+                <div class="culture-box">
+
+                    <div class="icon">🎨</div>
+
+                    <h3>Mithila Art</h3>
+
+                    <p>
+                        Discover vibrant traditional paintings and
+                        patterns.
+                    </p>
+
+                </div>
+
+                <div class="culture-box">
+
+                    <div class="icon">🛕</div>
+
+                    <h3>Temples</h3>
+
+                    <p>
+                        Explore beautiful temples and sacred places.
+                    </p>
+
+                </div>
+
+                <div class="culture-box">
+
+                    <div class="icon">🎉</div>
+
+                    <h3>Festivals</h3>
+
+                    <p>
+                        Experience vibrant religious and cultural
+                        celebrations.
+                    </p>
+
+                </div>
+
+                <div class="culture-box">
+
+                    <div class="icon">🍛</div>
+
+                    <h3>Local Food</h3>
+
+                    <p>
+                        Taste traditional flavors from the Mithila region.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GALLERY
+========================== -->
+
+<section class="section gallery" id="gallery">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="small-title">
+                Visual Journey
+            </span>
+
+            <h2>
+                Beautiful Janakpur
+            </h2>
+
+            <p>
+                A glimpse of the temples, ponds and peaceful
+                surroundings of Janakpurdham.
+            </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://nepaljetairways.com/upload/Destination/1750758543_janakpurdham-temple.jpg"
+                    alt="Janaki Mandir aerial view"
+                >
+
+                <div class="gallery-caption">
+                    Janaki Mandir
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://i.pinimg.com/originals/07/08/8f/07088f61bcda0e4da6a35687d7810b85.jpg"
+                    alt="Janaki Temple"
+                >
+
+                <div class="gallery-caption">
+                    Sacred Architecture
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Ganga_Sagar%2C_Janakpur-September_22%2C_2016-IMG_7686.jpg"
+                    alt="Ganga Sagar"
+                >
+
+                <div class="gallery-caption">
+                    Ganga Sagar
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://www.holidify.com/images/cmsuploads/compressed/3889882884_f1427137d5_b_20191022103715.jpg"
+                    alt="Dhanush Sagar"
+                >
+
+                <div class="gallery-caption">
+                    Sacred Waters
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://cpdhakal.com/wp-content/uploads/2024/03/Ganga-Sagar-1024x580.jpg"
+                    alt="Ganga Sagar aerial view"
+                >
+
+                <div class="gallery-caption">
+                    Janakpur at Dusk
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://jankarinepal.com/wp-content/uploads/2019/10/Janaki-Mandir.jpg"
+                    alt="Janaki Mandir reflection"
+                >
+
+                <div class="gallery-caption">
+                    Temple Reflections
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LOCATION
+========================== -->
+
+<section class="section location" id="location">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="small-title">
+                Find Us
+            </span>
+
+            <h2>
+                Location
+            </h2>
+
+            <p>
+                Janakpurdham is located in Dhanusha District,
+                Madhesh Province, Nepal.
+            </p>
+
+        </div>
+
+
+        <div class="location-grid">
+
+            <div class="map">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Janakpur,Dhanusha,Nepal&output=embed"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+
+            <div class="location-info">
+
+                <h2>
+                    Come to Janakpur
+                </h2>
+
+                <p>
+                    Discover the spiritual and cultural heart of
+                    Mithila in southern Nepal.
+                </p>
+
+
+                <div class="info-item">
+
+                    <div class="info-icon">
+                        📍
+                    </div>
+
+                    <div>
+                        <h4>Location</h4>
+
+                        <p>
+                            Janakpurdham, Dhanusha,
+                            Madhesh Province, Nepal
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <div class="info-icon">
+                        🛕
+                    </div>
+
+                    <div>
+                        <h4>Main Attraction</h4>
+
+                        <p>
+                            Janaki Mandir and the surrounding
+                            historic temple area.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <div class="info-icon">
+                        ✈️
+                    </div>
+
+                    <div>
+                        <h4>Getting There</h4>
+
+                        <p>
+                            Janakpur is connected with Kathmandu
+                            by road and air services.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Janakpur,Dhanusha,Nepal"
+                    target="_blank"
+                    class="btn btn-primary">
+                    Open in Google Maps
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================== -->
+
+<section class="section contact" id="contact">
+
+    <div class="container">
+
+        <div class="contact-box">
+
+            <h2>
+                Contact Us
+            </h2>
+
+            <p>
+                Have a question about visiting Janakpur?
+                Send us a message.
+            </p>
+
+
+            <form id="contactForm">
+
+                <div class="form-row">
+
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        placeholder="Your Email"
+                        required
+                    >
+
+                </div>
+
+
+                <input
+                    type="text"
+                    placeholder="Subject"
+                    required
+                >
+
+
+                <textarea
+                    placeholder="Write your message..."
+                    required>
+                </textarea>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <h2>
+                    Visit <span>Janakpur</span>
+                </h2>
+
+                <p>
+                    Explore Janakpurdham — a city of devotion,
+                    Mithila culture, beautiful temples, sacred ponds
+                    and unforgettable experiences.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Explore</h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#places">Places</a>
+                    </li>
+
+                    <li>
+                        <a href="#gallery">Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="#location">Location</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>Visit</h3>
+
+                <ul class="footer-links">
+
+                    <li>Janaki Mandir</li>
+                    <li>Ganga Sagar</li>
+                    <li>Dhanush Sagar</li>
+                    <li>Ram Mandir</li>
+                    <li>Dhanushadham</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © <span id="year"></span> Visit Janakpur.
+            Made with ❤️ for Janakpurdham, Nepal.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================== -->
+
+<script>
+
+    /* Navbar background on scroll */
+
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+
+        if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+
+    });
+
+
+    /* Mobile menu */
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+
+
+    /* Close mobile menu after clicking */
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+        });
+
+    });
+
+
+    /* Contact form */
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+
+        e.preventDefault();
+
+        alert(
+            "Thank you for contacting Visit Janakpur! " +
+            "Your message has been received."
+        );
+
+        this.reset();
+
+    });
+
+
+    /* Current year */
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
